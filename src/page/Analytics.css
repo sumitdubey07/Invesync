@@ -1,0 +1,79 @@
+.analytics-container {
+  max-width: 2000px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+}
+
+.analytics-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.analytics-header h1 {
+  font-size: 36px;
+  color: #10b981;
+}
+
+.analytics-header p {
+  color: #bbb;
+  margin-top: 10px;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.analytics-card {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.analytics-card h2 {
+  font-size: 24px;
+  color: #a855f7;
+  margin-bottom: 12px;
+}
+
+.analytics-card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #10b981;
+}
+
+.analytics-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.analytics-table th,
+.analytics-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.analytics-table th {
+  background-color: #262626;
+  color: #10b981;
+}
+
+.analytics-table td {
+  color: #ddd;
+}
+
+.analytics-table tr:hover {
+  background-color: #2a2a2a;
+}

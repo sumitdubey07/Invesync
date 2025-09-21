@@ -1,0 +1,93 @@
+/* src/page/Portfolio.css */
+
+.portfolio-container {
+  padding: 40px 20px;
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.portfolio-title {
+  font-size: 32px;
+  color: #10b981;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.portfolio-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #fff;
+  width: 200px;
+}
+
+.portfolio-form input::placeholder {
+  color: #aaa;
+}
+
+.portfolio-form button {
+  padding: 12px 24px;
+  background-color: #10b981;
+  color: #121212;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.portfolio-form button:hover {
+  background-color: #0ea672;
+}
+
+.stock-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.stock-card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.stock-card h3 {
+  color: #a855f7;
+  margin-bottom: 8px;
+}
+
+.stock-card p {
+  margin: 4px 0;
+  color: #ccc;
+}
+
+.stock-card button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.stock-card button:hover {
+  background-color: #dc2626;
+}
