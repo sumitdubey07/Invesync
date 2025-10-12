@@ -1,0 +1,101 @@
+.disclaimer-footer {
+  background-color: #0d0d0d;
+  color: #ccc;
+  padding: 30px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-columns {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  border-bottom: 1px solid #333;
+  padding: 10px 0;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.section-title h3 {
+  color: #ffcc00;
+  font-size: 18px;
+  margin: 0;
+}
+
+.section-title span {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.section ul {
+  list-style: none;
+  padding: 5px 0 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 6px 20px; /* spacing between items */
+}
+
+.section li {
+  margin: 0; /* remove extra margin */
+}
+
+.section a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.6; /* Better spacing */
+  display: block; /* Each link in its own line */
+}
+
+.section a:hover {
+  color: #ffcc00; /* Highlight on hover */
+}
+
+.disclaimer-text {
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 13px;
+}
+
+.disclaimer-text marquee h2 {
+  color: #ffcc00;
+  font-size: 14px;
+  margin: 0;
+}
+
+.disclaimer-text p {
+  margin-top: 10px;
+  color: #aaa;
+}
+
+/* Desktop view: Show all sections open */
+@media (min-width: 1024px) {
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .section {
+    border: none;
+    padding: 0;
+  }
+
+  .section ul {
+    /* display: block !important; */
+  }
+
+  .section-title span {
+    display: none; /* hide expand/collapse arrow */
+  }
+}

@@ -1,0 +1,112 @@
+/* About.css */
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 42px;
+  color: #10b981;
+  margin-bottom: 50px;
+  text-shadow: 0 0 10px #10b981;
+}
+
+/* Sections as cards with gradient border */
+.about-section {
+  background-color: #1f1f1f;
+  border-radius: 16px;
+  padding: 30px 25px;
+  margin-bottom: 35px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  border-left: 6px solid #a855f7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-left 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  border-left: 6px solid #10b981;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  color: #a855f7;
+  margin-bottom: 18px;
+  text-shadow: 0 0 5px #a855f7;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.7;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.feature-card {
+  background: linear-gradient(145deg, #1f1f1f, #2c2c2c);
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.feature-icon {
+  font-size: 32px;
+  color: #10b981;
+  margin-bottom: 12px;
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Float Animation for Icons */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.features-grid p {
+  color: #f1f1f1;
+  font-size: 16px;
+}
+
+/* Contact Card Icon */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-icon {
+  font-size: 22px;
+  color: #10b981;
+  margin-left: 6px;
+  vertical-align: middle;
+  animation: bounce 1.5s infinite;
+}
+
+/* Bounce Animation for Contact Icon */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
